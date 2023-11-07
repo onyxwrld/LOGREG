@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/emailReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/userNameReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailReg"
+        android:hint="Felhasználónév"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/passwordReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userNameReg"
+        android:hint="Jelszó"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/regTeljes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordReg"
+        android:hint="Teljes név"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regTeljes"
+        android:text="Regisztráció"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnReg"
+        android:text="Vissza"
+        android:textSize="20sp"
+        />
+
+</RelativeLayout>
